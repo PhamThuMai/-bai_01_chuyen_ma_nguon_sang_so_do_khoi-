@@ -1,0 +1,24 @@
+include <stdio.h>
+int main(){
+    int n;
+    n=7;
+    if(n<2){
+       printf("Khong phải la so nguyen to.\n");
+    }else{
+      int i = 2;
+      int laSNT = 1;
+      while (i < n) {
+            if (n % i == 0) {
+                laSNT = 0;
+            }
+            i++;
+        }
+        if (laSNT == 1) {
+            printf("La so nguyen to.\n");
+        } else {
+            printf("Khong phải la so nguyen to.\n");
+        }
+    }
+    
+    return 0;
+}
