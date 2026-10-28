@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main() {
+    int n = 9;
+    int a[9] = {12, 45, 7, 18, 29, 78, -9, 11, 60};
+    int Max = a[0];
+    int i = 1;
+    while (i < n) {
+        if (Max < a[i]) {
+            Max = a[i];
+        }
+        i++;
+    }
+    printf("Gia tri lon nhat trong mang la %d", Max);
+    return 0;
+}
